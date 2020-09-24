@@ -1,6 +1,8 @@
-.portfolio {
+
+  
+  .portfolio {
     width: calc((100% - 30px * 2) / 3);
-    background: #FFFFFF;
+    background: $white;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
   }
@@ -68,5 +70,8 @@
      .portfolio-link .team-card__thumb {
     text-align: left;
      }
+  
+  
+  
   
   

@@ -1,0 +1,53 @@
+.footer .container {
+    padding: 60px 15px;
+    align-items: baseline;
+  }
+  
+  .footer  {
+    background-color: $ftr-bcg;
+   }
+  
+  .footer__thumb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  
+   .footer-address {
+    color: $white;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .footer-address__link-mail {
+    display: block;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-address__link-tel {
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-box {
+    display: inline-block;
+     margin-left: 70px;
+  }
+  
+  .follow {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+  }
+  
+  
+  
