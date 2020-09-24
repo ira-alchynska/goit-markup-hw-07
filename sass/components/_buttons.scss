@@ -1,0 +1,63 @@
+.primary-button {
+    display: inline-block;
+    text-align: center;
+    border-color: $active;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
+    color: $white;
+    background-color: $active;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  color: $white;
+    transition: background-color $timing-function $function-animation;
+  }
+  
+    .hero .primary-button:hover,
+    .hero .primary-button:focus {
+      background-color: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  .subscribe__button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+   text-align: center;
+   border-color: $active;
+   border-radius: 4px;
+   padding: 10px 29px;
+   margin-right: 10px;
+   min-width: 200px;
+   border: 1px solid transparent;
+   color: $white;
+   background-color: $active;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   cursor: pointer;
+   transition: background-color $timing-function $function-animation;
+   
+    }
+ 
+    
+    .footer .subscribe__button:hover,
+    .footer .subscribe__button:focus {
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     background-color: #188ce8;
+     fill: $white;
+    }
+    
+    .subscribe__button-icon {
+    position: absolute;
+    margin-left: 10px;
+    top: 30%;
+    right: 10%;
+    fill: $white;
+    }
+     

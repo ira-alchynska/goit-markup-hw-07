@@ -1,0 +1,72 @@
+.portfolio {
+    width: calc((100% - 30px * 2) / 3);
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+  }
+  
+  .portfolio-link {
+    display: block;
+    width: 100%;
+    background-color: $white;
+    box-shadow: none;
+    transition: box-shadow $timing-function $function-animation;
+  }
+  
+  .portfolio:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  
+  .portfolio {
+    margin-bottom: 20px;
+  }
+  
+  
+  .portfolio:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  
+  
+  .overlay {
+    position: relative; 
+    overflow: hidden;
+  }
+  
+  .portfolio-link:hover .team-card__thumb{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  }
+  
+  .portfolio-link:hover .overlay-description {
+    transition: transform $timing-function $function-animation;
+    transform: translateY(0);
+  }
+  
+  .overlay-description {
+    position: absolute;
+     top: 0;
+      left: 0;
+      width:100%;
+     height: 100%;
+     padding: 63px 24px;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(100%);
+      transition: transform $timing-function $function-animation;
+  }
+  
+     .overlay-text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.5;
+      color: $white;
+     }
+  
+     .portfolio .team-card__pecture {
+       width: 370px;
+     }
+  
+     .portfolio-link .team-card__thumb {
+    text-align: left;
+     }
+  
+  

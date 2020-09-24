@@ -1,0 +1,31 @@
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients__item {
+    width: calc((100% - 30px * 5) / 6);
+  }
+  
+  .clients__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+    height: 90px;
+    fill: $social-icon;
+    border: 1px solid $social-icon;
+    border-radius: 4px;
+    transition: border-color $timing-function $function-animation,
+    fill $timing-function $function-animation;
+  }
+  .clients__icon {
+    fill: $social-icon;
+    transition: fill $timing-function $function-animation;
+  }
+  
+  .clients__item .clients__link:hover .clients__icon,
+  .clients__item .clients__link:focus .clients__icon,
+  .clients__item .clients__link:hover,
+  .clients__item .clients__link:focus {
+    border-color: $active;
+    fill: $active;
+  }

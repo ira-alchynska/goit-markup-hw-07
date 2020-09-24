@@ -1,0 +1,412 @@
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./base/common";
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/logo";
+@import "./components/social-icons";
+@import "./components/subscribe";
+@import "./layout/page-header";
+@import "./layout/site-nav";
+@import "./layout/contacts";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/gallery";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+
+.footer .container {
+  padding: 60px 15px;
+  align-items: baseline;
+}
+
+.footer  {
+  background-color: var(--ftr-bcg);
+ }
+
+.footer__thumb {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__logo .footer__logo-activ {
+  color: var(--active);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer__logo .footer__logo-white {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white);
+}
+
+/*адрес*/
+
+
+ .footer-address {
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-address__link-mail {
+  display: block;
+  margin-bottom: 9px;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.footer-address__link-tel {
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.footer-box {
+  display: inline-block;
+   margin-left: 70px;
+}
+
+.follow {
+display: block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--white);
+margin-bottom: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-icons__item {
+  width: calc((100% - 10px * 3) /4);
+}
+
+.footer-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:44px;
+  height:44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.footer-icons__link:hover,
+.footer-icons__link:focus {
+  background-color: var(--active);
+}
+
+.footer-icons__link .footer-icon:hover,
+.footer-icons__link .footer-icon:focus  {
+fill: var(--white);
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white); 
+}
+
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+ } 
+
+.subscribe__field {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    background: var(--ftr-bcg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border $timing-function $function-animation;
+}
+.subscribe__form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+ .subscribe__button {
+   position: relative;
+   width: 200px;
+   height: 50px;
+   display: inline-block;
+  text-align: center;
+  border-color: $active;
+  border-radius: 4px;
+  padding: 10px 29px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  color: $white;
+  background-color: $active;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color 
+ }
+  
+  .footer .container {
+    padding: 60px 15px;
+    align-items: baseline;
+  }
+  
+  .footer  {
+    background-color: $ftr-bcg;
+   }
+  
+  .footer__thumb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer__logo .footer__logo-activ {
+    color: $active;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  
+  .footer__logo .footer__logo-white {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $white;
+  }
+  
+  /*адрес*/
+  
+  
+   .footer-address {
+    color: $white;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .footer-address__link-mail {
+    display: block;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-address__link-tel {
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-box {
+    display: inline-block;
+     margin-left: 70px;
+  }
+  
+  .follow {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .footer-icons__item {
+    width: calc((100% - 10px * 3) /4);
+  }
+  
+  .footer-icons__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-icons__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:44px;
+    height:44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color $timing-function $function-animation;
+    }
+  
+  .footer-icons__link:hover,
+  .footer-icons__link:focus {
+    background-color: $active;
+  }
+  
+  .footer-icons__link .footer-icon:hover,
+  .footer-icons__link .footer-icon:focus  {
+  fill: $white;
+  }
+  
+  .footer__icon {
+    width: 20px;
+    height: 20px;
+    fill: $white; 
+  }
+  
+  
+  
+  
+  .subscribe {
+    margin-left: 93px;
+  }
+  
+  .subscribe__title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+   } 
+  
+  .subscribe__field {
+      width: 358px;
+      margin-right: 12px;
+      padding-left: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: rgba(255, 255, 255, 0.6);
+      background: $ftr-bcg;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      transition: border $timing-function $function-animation;
+  }
+  .subscribe__form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  
+   .subscribe__button {
+     position: relative;
+     width: 200px;
+     height: 50px;
+     display: inline-block;
+    text-align: center;
+    border-color: $active;
+    border-radius: 4px;
+    padding: 10px 29px;
+    min-width: 200px;
+    border: 1px solid transparent;
+    color: $white;
+    background-color: $active;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color $timing-function $function-animation ;
+     }
+  
+     .subscribe__button > span {
+       margin-right: 10px;
+     }
+  
+     
+     .footer .subscribe__button:hover,
+     .footer .subscribe__button:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-color: #188ce8;
+      fill: $white;
+     }
+     
+     .subscribe__button-icon {
+     position: absolute;
+     margin-left: 10px;
+     top: 30%;
+     right: 10%;
+     fill: $white;
+     }
+    
+   
+   .subscribe__button > span {
+     margin-right: 10px;
+   }
+
+   
+   .footer .subscribe__button:hover,
+   .footer .subscribe__button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #188ce8;
+    fill: $white;
+   }
+   
+   .subscribe__button-icon {
+   position: absolute;
+   margin-left: 10px;
+   top: 30%;
+   right: 10%;
+   fill: $white;
+   }
+  
+
+
+
+
+
+
+
