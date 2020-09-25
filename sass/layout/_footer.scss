@@ -14,9 +14,30 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
+ 
+  .footer__logo {
+    margin-bottom: 20px;
+  }
   
+  .footer__logo .footer__logo-activ {
+    color: $active;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
   
-   .footer-address {
+  .footer__logo .footer__logo-white {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $white;
+  }
+  
+  .footer-address {
     color: $white;
     font-style: normal;
     font-size: 14px;
@@ -37,6 +58,7 @@
   .footer-box {
     display: inline-block;
      margin-left: 70px;
+     
   }
   
   .follow {
@@ -47,6 +69,48 @@
   text-transform: uppercase;
   color: $white;
   margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .footer-icons__item {
+    width: calc((100% - 10px * 3) /4);
+  }
+  
+  .footer-icons__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-icons__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:44px;
+    height:44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color $timing-function $function-animation;
+    }
+  
+  .footer-icons__link:hover,
+  .footer-icons__link:focus {
+    background-color: $active;
+  }
+  
+  .footer-icons__link .footer-icon:hover,
+  .footer-icons__link .footer-icon:focus  {
+  fill: $white;
+  }
+  
+  .footer__icon {
+    width: 20px;
+    height: 20px;
+    fill: $white; 
   }
   
   
