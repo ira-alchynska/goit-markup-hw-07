@@ -1,0 +1,23 @@
+.footer-address {
+    color: $white;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .footer-address__link-mail {
+    display: block;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-address__link-tel {
+    color: rgba(255, 255, 255, 0.6)
+  }
+  
+  .footer-box {
+    display: inline-block;
+     margin-left: 70px;
+     
+  }
