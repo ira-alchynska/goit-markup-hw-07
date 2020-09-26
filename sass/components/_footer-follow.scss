@@ -1,49 +1,43 @@
 .follow {
     display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
     text-transform: uppercase;
     color: $white;
     margin-bottom: 20px;
     }
   
     .footer-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      @include flexbox(center, center);
+     
+   
     
-    
-    .footer-icons__item {
+    &__item {
       width: calc((100% - 10px * 3) /4);
     }
     
-    .footer-icons__item:not(:last-child) {
+    &__item:not(:last-child) {
       margin-right: 10px;
     }
-    
+  }
     .footer-icons__link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexbox(center, center);
       width:44px;
       height:44px;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       transition: background-color $timing-function $function-animation;
-      }
+      
     
-    .footer-icons__link:hover,
-    .footer-icons__link:focus {
+    &:hover,
+    &:focus {
       background-color: $active;
     }
     
-    .footer-icons__link .footer-icon:hover,
-    .footer-icons__link .footer-icon:focus  {
+    & .footer__icon:hover,
+    & .footer__icon:focus  {
     fill: $white;
     }
-    
+  }
     .footer__icon {
       width: 20px;
       height: 20px;

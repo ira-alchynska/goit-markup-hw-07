@@ -1,5 +1,5 @@
 .primary-button {
-    display: inline-block;
+   display: inline-block;
     text-align: center;
     border-color: $active;
     border-radius: 4px;
@@ -8,57 +8,19 @@
     border: 1px solid transparent;
     color: $white;
     background-color: $active;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font(400, 16px, 1.87);
     letter-spacing: 0.06em;
     cursor: pointer;
   color: $white;
     transition: background-color $timing-function $function-animation;
-  }
   
-    .hero .primary-button:hover,
-    .hero .primary-button:focus {
-      background-color: #188ce8;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+   &:hover,
+   &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-  .subscribe__button {
-    position: relative;
-    width: 200px;
-    height: 50px;
-    display: inline-block;
-   text-align: center;
-   border-color: $active;
-   border-radius: 4px;
-   padding: 10px 29px;
-   margin-right: 10px;
-   min-width: 200px;
-   border: 1px solid transparent;
-   color: $white;
-   background-color: $active;
-   font-weight: bold;
-   font-size: 16px;
-   line-height: 1.87;
-   letter-spacing: 0.06em;
-   cursor: pointer;
-   transition: background-color $timing-function $function-animation;
-   
-    }
+}
     
 
-    .filter__button { 
-      display: block;
-      border-color: $active;
-      border-radius: 4px;
-      padding: 6px 22px;
-      text-align: center;
-      border: 1px solid transparent;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.625;
-      color: $primary-text;
-      background-color: $gray-bgc;
-      border-color: $gray-bgc;
-      transition: background-color $timing-function $function-animation;
-      cursor: pointer;
-    }
+    

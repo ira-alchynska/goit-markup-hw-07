@@ -1,18 +1,16 @@
 .subscribe {
   margin-left: 93px;
-}
+
  
- .subscribe__title {
+ &__title {
    display: block;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   text-transform: uppercase;
-   color: $white;
    margin-bottom: 20px;
+   color: $white;
+   @include font(700, 14px, 1.14);
+   text-transform: uppercase;
   } 
  
- .subscribe__field {
+ &__field {
      width: 358px;
      margin-right: 12px;
      padding-left: 16px;
@@ -25,48 +23,46 @@
      border-radius: 4px;
      transition: border $timing-function $function-animation;
  }
- .subscribe__form input::placeholder {
+ &__form input::placeholder {
    color: rgba(255, 255, 255, 0.6);
  }
  
- 
-  .subscribe__button {
+}
+  .subscribe__button { 
     position: relative;
     width: 200px;
     height: 50px;
-    display: inline-block;
    text-align: center;
    border-color: $active;
    border-radius: 4px;
    padding: 10px 29px;
-   min-width: 200px;
    border: 1px solid transparent;
    color: $white;
    background-color: $active;
-   font-weight: bold;
-   font-size: 16px;
-   line-height: 1.87;
+   @include font(700, 16px, 1.87); 
    letter-spacing: 0.06em;
    cursor: pointer;
-   transition: background-color $timing-function $function-animation
-  }
-   
- 
-  .subscribe__button > span {
-    margin-right: 10px;
-  }
+   transition: background-color $timing-function $function-animation;
   
-  .footer .subscribe__button:hover,
-  .footer .subscribe__button:focus {
+   &:hover,
+   &:focus {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    background-color: #188ce8;
    fill: $white;
   }
-  
-  .subscribe__button-icon {
+  }
+
+  .subscribe{ 
+  &__button-icon {
   position: absolute;
   margin-left: 10px;
   top: 30%;
   right: 10%;
   fill: $white;
   }
+
+ &__inscription {
+    margin-right: 10px;
+  }
+}
+  

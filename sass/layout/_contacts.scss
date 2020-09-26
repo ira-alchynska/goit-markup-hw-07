@@ -3,57 +3,50 @@
     margin-right: 10px;
    }
   
-   .contacts__link {
-     display: flex;
-     align-items: center;
-   }
-  
+   
   .contacts {
     display: flex;
-  }
-  
-  .contacts .contacts__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: $secondary-text;
   transition: color $timing-function $function-animation;
-  }
+}
   
-  .contacts__link:hover, 
-  .contacts__link:focus {
+  &__link:hover, 
+  &__link:focus {
     color: $active;
-    
   }
   
-  .contacts__link:hover .contacts__icon {
+  &__link:hover &__icon {
     fill: $active;
   }
-  
+}
   
    .contacts__item:not(:last-child) {
     margin-right: 50px;
   }
 
+
   .footer-address {
     color: $white;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-  }
+@include font(400, 14px, 1.71);
+   
   
-  .footer-address__link-mail {
+  &__link-mail {
     display: block;
     margin-bottom: 9px;
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .footer-address__link-tel {
+  &__link-tel {
     color: rgba(255, 255, 255, 0.6);
   }
-  
+}
   .footer-box {
     display: inline-block;
      margin-left: 70px;

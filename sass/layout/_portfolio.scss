@@ -4,7 +4,7 @@
     width: calc((100% - 30px * 2) / 3);
     background: $white;
     border: 1px solid #EEEEEE;
-    box-sizing: border-box;
+   
   }
   
   .portfolio-link {
@@ -33,17 +33,21 @@
     position: relative; 
     overflow: hidden;
   }
-  
-  .portfolio-link:hover .team-card__thumb{
+  .portfolio-link {
+  & .team-card__thumb {
+      text-align: left;
+      
+  }
+  &:hover .team-card__thumb{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   }
   
-  .portfolio-link:hover .overlay-description {
+  &:hover .overlay-description {
     transition: transform $timing-function $function-animation;
     transform: translateY(0);
   }
-  
+}
   .overlay-description {
     position: absolute;
      top: 0;
@@ -57,19 +61,15 @@
   }
   
      .overlay-text {
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 1.5;
       color: $white;
+       @include font(400, 18px, 1.5);
      }
   
      .portfolio .team-card__pecture {
        width: 370px;
      }
   
-     .portfolio-link .team-card__thumb {
-    text-align: left;
-     }
+    
   
   
   

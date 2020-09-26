@@ -1,7 +1,5 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @include flexbox (center, center);
   height: 600px;
   max-width: 1600px;
   margin-right: auto;
@@ -10,21 +8,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  }
+ 
   
-  .hero .hero__box {
+  &__box {
     text-align: center;
   }
   
-  .hero__title {
+  &__title {
     margin-top: 0px;
     margin-bottom: 30px;
-  color: $white;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    color: $white;
+    @include font(900, 44px, 1.36);
     text-transform: uppercase;
    letter-spacing: 0.06em;
   }
-  
+}
   

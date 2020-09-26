@@ -38,9 +38,7 @@
   }
   
   .modal__button-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(center, center);
     position: absolute;
     top: 8px;
     right: 8px;
@@ -53,29 +51,30 @@
   border-radius: 50%;
   cursor: pointer;
   transition: all $timing-function $function-animation;
-  }
-  
-   .modal__icon-close {
-  width: 11px;
-  height: 11px;
-  }
-  
-  .modal__button-close:hover, .modal__button-close:focus {
+ 
+  &:hover, 
+  &:focus {
     fill: $active;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-  .modal__content {
+}
+
+.modal {
+
+  &__content {
     padding: 40px;
   }
   
-  .modal__title {
+  &__icon-close {
+    width: 11px;
+    height: 11px;
+    }
+
+  &__title {
     display: block;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     margin-bottom: 12px;
     color: $black;
+   @include font(700, 20px, 1.15);
   }
-  
+}
