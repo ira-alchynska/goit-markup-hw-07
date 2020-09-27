@@ -17,7 +17,8 @@
   border-radius: 0px 0px 4px 4px;
   }
   
-  .team-card__thumb {
+  .team-card { 
+  &__thumb {
      padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 20px;
@@ -26,11 +27,11 @@
   
   }
   
-  .team-card__name {
+  &__name {
      color: $primary-text;
  }
   
-  .team-card__text {
+  &__text {
     margin-top: 0px;
     margin-bottom: 16px;
     color: $secondary-text;
@@ -38,3 +39,4 @@
     font-size: 16px;
     line-height: 1.18;
   }
+}

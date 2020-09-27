@@ -91,7 +91,8 @@
       display:block;
     }
     
-  
+  }
+  .deal{ 
     &__icon {
       position: absolute;
       background-image: url(../img/icons/square.svg);
@@ -113,18 +114,6 @@
       transition: background-color $timing-function $function-animation,
       fill $timing-function $function-animation;
     }
-  }
-
-    .button__thumb {
-      @include flexbox(center, center);
-      margin-top: 30px;
-    }
   
-   .form__button {
-    padding: 10px 55px 10px 56px;
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: $timing-function $function-animation;
   }
-}
+  
